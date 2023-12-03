@@ -1,0 +1,39 @@
+<div class="recent_search">
+    <app-rs-header></app-rs-header>
+    <div *ngIf="recentSearch.length>0; then ifBlock; else elseBlock"></div>
+    <ng-template #ifBlock>
+        <div class="recent_search_content">
+            <div class="topTexts">
+                <div class="text">You recently searched for</div>
+                <div class="unlikeAll" (click)="togglePopUp(1)">Clear All</div>
+            </div>
+            <div class="weather" *ngFor="let city of recentSearch">
+                <div class="weatherdetail">
+                    <div class="city">
+                        {{city.location.name}},{{city.location.region}}
+                    </div>
+                    <div class="details">
+                        <img class="image" src={{getImage(city.current.weather_descriptions[0])}}/>
+                        <div class="temp">
+                            {{city.current.temperature}}
+                            °C
+                        </div>
+                        <div class="desc">
+                            {{city.current.weather_descriptions[0]}}
+                        </div>
+                    </div>
+                </div>
+                <img class="like" src={{getLikeImage(city)}}/>
+            </div>
+        </div>
+    </ng-template>
+    <ng-template #elseBlock>
+        <div class="recent_search_content noItems">
+            <img src="../../assets/weather/nothing.png"/>
+            <div class="text">
+                No Recent Search
+            </div>
+        </div>
+    </ng-template>
+    <app-popup *ngIf="popUp" (onButton1Click)="togglePopUp(2)" (onButton2Click)="deleteAll()" [popupTexts]="popupTexts"></app-popup>
+</div>

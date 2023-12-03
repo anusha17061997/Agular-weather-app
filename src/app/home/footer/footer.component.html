@@ -1,0 +1,46 @@
+<div class="footer_content">
+    <div class="details">
+        <img class="img" src="../../../assets/weather/cloudy.png"/>
+        <div class="detail">
+            <div class="parameter">Cloud Cover</div>
+            <div class="paravalue">
+                {{ weatherData.current.cloudcover }}
+            </div>
+        </div>
+    </div>
+    <div class="details">
+        <img class="img" src="../../../assets/weather/temparature.png"/>
+        <div class="detail">
+            <div class="parameter">Temperature</div>
+            <div class="parameter">{{ weatherData.current.temperature }}
+                °C</div>
+        </div>
+    </div>
+    <div class="details">
+        <img class="img" src="../../../assets/weather/humidity.png"/>
+        <div class="detail">
+            <div class="parameter">Humidity</div>
+            <div class="parameter">
+                {{ weatherData.current.humidity }}
+            </div>
+        </div>
+    </div>
+    <div class="details">
+        <img class="img" src="../../../assets/weather/temparature.png"/>
+        <div class="detail">
+            <div class="parameter">Pressure</div>
+            <div class="parameter">
+                {{ weatherData.current.pressure }}
+            </div>
+        </div>
+    </div>
+    <div class="details">
+        <img class="img" src="../../../assets/weather/temparature.png"/>
+        <div class="detail">
+            <div class="parameter">Wind Speed</div>
+            <div class="parameter">
+                {{ weatherData.current.wind_speed }}
+            </div>
+        </div>
+    </div>
+</div>

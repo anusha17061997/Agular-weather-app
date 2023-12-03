@@ -1,0 +1,8 @@
+<div class="home">
+    <app-header (hamburgerEvent)="toggleSideNav()"></app-header>
+    <app-main [weatherData]="currentWeather"></app-main>
+    <app-footer [weatherData]="currentWeather"></app-footer>
+</div>
+<div *ngIf="showSideNav">
+    <app-side-nav (hideSideNavEvent)="toggleSideNav()"></app-side-nav>
+</div>

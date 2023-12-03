@@ -1,0 +1,8 @@
+<div class="search_content">
+    <app-sheader (onSearchChange)="onSearchChange($event)"></app-sheader>
+    <div class="cities">
+        <div class="city" *ngFor="let city of cityList" (click)="onCitySelect(city)">
+            {{city}}
+        </div>
+    </div>
+</div>

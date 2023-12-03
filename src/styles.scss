@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+
+html {
+  height: 100%;
+  width: 100%;
+  body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+  }
+}
+
+@font-face {
+  font-family: "roboto-medium";
+  src: url("./assets/Fonts/Roboto/Roboto-Medium.ttf");
+}
+
+@font-face {
+  font-family: "roboto";
+  src: url("./assets/Fonts/Roboto/Roboto-Regular.ttf");
+}
+
+:root {
+  --white: #ffffff;
+  --red: #e32843;
+  --greyish_black: #292f33;
+  --black: #000000;
+  --grey: grey;
+  --light_grey: #707070;
+  --purple: #673ab7;
+}

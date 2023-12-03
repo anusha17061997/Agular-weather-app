@@ -1,0 +1,42 @@
+<div class="favourite">
+  <app-fheader></app-fheader>
+  <div *ngIf="weatherDatas.length > 0; then ifBlock; else elseBlock"></div>
+  <ng-template #ifBlock>
+    <div class="favourite_content">
+      <div class="topTexts">
+        <div class="text">{{ weatherDatas.length }} added as favourites</div>
+        <div class="unlikeAll" (click)="togglePopUp(1)">Remove All</div>
+      </div>
+      <div class="weather" *ngFor="let city of weatherDatas">
+        <div class="weatherdetail">
+          <div class="city">
+            {{ city.location.name }},{{ city.location.region }}
+          </div>
+          <div class="details">
+            <img
+              class="image"
+              src="{{ getImage(city.current.weather_descriptions[0]) }}"
+            />
+            <div class="temp">{{ city.current.temperature }} °C</div>
+            <div class="desc">
+              {{ city.current.weather_descriptions[0] }}
+            </div>
+          </div>
+        </div>
+        <img class="like" src="../../../assets/Home/like.png" />
+      </div>
+    </div>
+  </ng-template>
+  <ng-template #elseBlock>
+    <div class="favourite_content noItems">
+      <img src="../../assets/weather/nothing.png" />
+      <div class="text">No Favourites added</div>
+    </div>
+  </ng-template>
+  <app-popup
+    *ngIf="popUp"
+    (onButton1Click)="togglePopUp(2)"
+    (onButton2Click)="unlikeAll()"
+    [popupTexts]="popupTexts"
+  ></app-popup>
+</div>

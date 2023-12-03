@@ -1,0 +1,13 @@
+.search_content {
+  .cities {
+    margin-top: 60px;
+    .city {
+      color: var(--light_grey);
+      font-family: "roboto";
+      font-size: 14px;
+      letter-spacing: 0;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      padding: 19px;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.home_sideNav {
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    width: 60%;
+    height: 100%;
+    background-color: var(--white);
+    padding: 50px 30px;
+    box-sizing: border-box;
+    .home, .favourite, .search {
+        padding-bottom: 20px;
+        color: var(--grey);
+        cursor: pointer;
+    }
+    .text:hover {
+        color: var(--black);
+    }
+}
+.overlay {
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}

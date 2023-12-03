@@ -1,0 +1,12 @@
+.bg_img {
+  background: url("../assets/Splash/splash_BG.png");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .logo img {
+    height: 20px;
+  }
+}

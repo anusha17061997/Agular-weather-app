@@ -1,0 +1,30 @@
+<div class="home_main">
+    <div class="date">
+        {{ dateTime }}
+    </div>
+    <div class="location">
+        {{ weatherData.location.name }},{{ weatherData.location.region }}
+    </div>
+    <div class="favourite">
+        <img *ngIf="isLiked" (click)="toggleLike()" src="../../../assets/Home/like.png"/>
+        <img *ngIf="!isLiked" (click)="toggleLike()" src="../../../assets/Home/unlike.png"/>
+        <div class="text">Add to favourite</div>
+    </div>
+    <div class="weatherImg">
+        <img class="image" src="{{ getImage(weatherData.current.weather_descriptions[0]) }}"/>
+    </div>
+    <div class="temp">
+        <div class="temp_text">{{ temparature }}</div>
+        <div class="tempPara">
+            <div (click)="ontempChange(1)" [class.bgWhite]="tempSelected == 1" class="celsius">
+                °C
+            </div>
+            <div (click)="ontempChange(2)" [class.bgWhite]="tempSelected == 2" class="fah">
+                °F
+            </div>
+        </div>
+    </div>
+    <div class="desc">
+        {{ weatherData.current.weather_descriptions[0] }}
+    </div>
+</div>

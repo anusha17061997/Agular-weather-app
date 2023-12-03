@@ -1,0 +1,33 @@
+.search_header {
+  padding: 19px;
+  position: fixed;
+  top: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 19px;
+  width: 100%;
+  background: var(--white);
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  .arrow {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+  }
+  input {
+    margin-left: 32px;
+    border: none;
+    color: var(--light_grey);
+    font-family: "roboto-medium";
+    font-size: 14px;
+    letter-spacing: 0;
+    outline: none;
+    cursor: pointer;
+  }
+  .close {
+    margin-left: auto;
+    height: 14px;
+    width: 14px;
+    cursor: pointer;
+  }
+}

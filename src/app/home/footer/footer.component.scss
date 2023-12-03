@@ -1,0 +1,32 @@
+.footer_content {
+  display: flex;
+  overflow-x: scroll;
+  padding: 30px 18px;
+  border-top: solid 1px #f8f4ed54;
+  .details {
+    display: flex;
+    margin-right: 40px;
+    .img {
+      height: 34px;
+      width: 25px;
+      margin-right: 18px;
+    }
+    .detail {
+      color: var(--white);
+      letter-spacing: 0;
+      .parameter {
+        font-size: 13px;
+        line-height: 15px;
+        white-space: pre;
+        margin-bottom: 5px;
+        font-family: "roboto";
+      }
+      .paravalue {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 21px;
+        font-family: "roboto-medium";
+      }
+    }
+  }
+}

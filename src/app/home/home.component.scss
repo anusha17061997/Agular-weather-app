@@ -1,0 +1,12 @@
+.home {
+  background: url("../../assets/Splash/splash_BG.png");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  app-main {
+    flex: 1;
+  }
+}

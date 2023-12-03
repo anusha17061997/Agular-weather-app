@@ -1,0 +1,95 @@
+.home_main {
+  margin: 54px 0px 0px 0px;
+  flex: 1;
+  .date {
+    opacity: 0.6;
+    color: var(--white);
+    font-family: "roboto";
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    line-height: 15px;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .location {
+    color: var(--white);
+    font-family: "roboto-medium";
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 21px;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .favourite {
+    display: flex;
+    justify-content: center;
+    img {
+      height: 17px;
+      width: 18px;
+      margin-right: 7px;
+    }
+    .text {
+      color: var(--white);
+      font-family: "roboto-medium";
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0;
+      line-height: 15px;
+    }
+  }
+  .weatherImg {
+    text-align: center;
+    margin-top: 85px;
+    image {
+      width: 77px;
+      height: 67px;
+    }
+  }
+  .temp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    .temp_text {
+      color: var(--white);
+      font-family: "roboto-medium";
+      font-size: 50px;
+      font-weight: 500;
+      letter-spacing: 0;
+      line-height: 61px;
+    }
+    .tempPara {
+      display: flex;
+      border-radius: 2px;
+      border: 1px solid var(--white);
+      border-radius: 2px;
+      margin-left: 13px;
+      font-family: "roboto";
+      color: var(--white);
+      font-size: 18px;
+      letter-spacing: 0;
+      line-height: 13px;
+      cursor: pointer;
+      .bgWhite {
+        background-color: var(--white);
+        color: var(--red) !important;
+      }
+      .celsius {
+        padding: 8px;
+      }
+      .fah {
+        padding: 8px;
+      }
+    }
+  }
+  .desc {
+    color: var(--white);
+    font-family: "roboto";
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 21px;
+    text-align: center;
+    margin-top: 10px;
+  }
+}

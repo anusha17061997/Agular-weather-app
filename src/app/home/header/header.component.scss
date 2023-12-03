@@ -1,0 +1,18 @@
+.home_header {
+  display: flex;
+  align-items: center;
+  padding: 16px 16px;
+  .hamburger,
+  .search {
+    height: 15px;
+    cursor: pointer;
+  }
+  .search {
+    margin-left: auto;
+  }
+  .logo {
+    width: 120px;
+    margin: 0px 0px 0px 32px;
+    height: 24px;
+  }
+}

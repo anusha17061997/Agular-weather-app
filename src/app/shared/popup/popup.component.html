@@ -1,0 +1,10 @@
+<div class="popup_content">
+    <div class="text">
+        {{popupTexts.text}}
+    </div>
+    <div class="buttons">
+        <div class="button1" (click)="button1Click()">{{popupTexts.button2}}</div>
+        <div class="button2" (click)="button2Click()">{{popupTexts.button1}}</div>
+    </div>
+</div>
+<div class="overlay" (click)="button1Click()"></div>

@@ -1,0 +1,5 @@
+<div class="search_header">
+    <img class="arrow" (click)="goBack()" src="../../../assets/Home/arrow.png"/>
+    <input placeholder="Search for City" [(ngModel)]="searchInput" (ngModelChange)="onSearch($event)"/>
+    <img *ngIf="searchInput" (click)="clearSearch()" class="close" src="../../../assets/weather/close.png"/>
+</div>
